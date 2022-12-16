@@ -148,6 +148,9 @@ header{
     @media screen and (max-width:700px){
         padding-left:50px;
     }
+    @media screen and (max-width:450px){
+        padding-left:20px;
+    }
     >.text{
         h1{
             color:#fff;
@@ -173,6 +176,12 @@ header{
             font-style: italic;
             margin-top: 15px;
             position: relative;
+            @media screen and (max-width:550px){
+                font-size: 23px;
+            }
+            @media screen and (max-width:380px){
+                font-size: 20px;
+            }
             &::before{
                 content:attr(data-text);
                 position: absolute;
