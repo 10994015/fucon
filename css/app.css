@@ -86,6 +86,11 @@ header > #menu-bar {
     padding: 20px 50px;
   }
 }
+@media screen and (max-width: 500px) {
+  header {
+    padding: 20px 10px;
+  }
+}
 header.active {
   background-color: rgb(0, 12, 32);
 }
@@ -143,6 +148,17 @@ header nav a.contact {
 header nav a.contact:hover {
   color: #fff;
   background-color: #d44808;
+}
+header > .logo {
+  width: 220px;
+}
+@media screen and (max-width: 350px) {
+  header > .logo {
+    width: 180px;
+  }
+}
+header > .logo img {
+  width: 100%;
 }
 
 .banner {
@@ -538,7 +554,7 @@ header nav a.contact:hover {
 
 footer {
   width: 100%;
-  padding: 50px 0 0;
+  padding: 50px 0 50px;
   background-color: #121212;
 }
 footer > .text {
@@ -548,7 +564,6 @@ footer > .text {
   max-width: 1200px;
   align-items: center;
   margin: 0 auto;
-  padding: 50px 0;
   border-bottom: 1px #333 solid;
 }
 @media screen and (max-width: 1250px) {
@@ -570,7 +585,7 @@ footer > .text {
 footer > .text > a {
   color: #fff;
   font-size: 24px;
-  width: 100%;
+  width: 250px;
   display: block;
   line-height: 1.6;
   max-width: 500px;
@@ -579,6 +594,9 @@ footer > .text > a {
   footer > .text > a {
     text-align: center;
   }
+}
+footer > .text > a > img {
+  width: 100%;
 }
 footer > .text > h4 {
   color: #FF5F13;
@@ -595,7 +613,6 @@ footer > .copyright {
   width: 100%;
   text-align: center;
   color: #fff;
-  padding: 50px 0 30px;
 }
 footer > .copyright a {
   color: #FF5F13;
