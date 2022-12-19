@@ -41,6 +41,7 @@ p.e-title{
     border-radius: 50%;
     cursor: pointer;
     transition: .3s;
+    z-index: 9999999;
     a{
         color:#fff;
     }
@@ -591,5 +592,312 @@ footer{
         top: 50%;
         left:50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+main.reserve{
+    min-height: 100vh;
+    padding: 100px 0;
+    >.intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 100px;
+        background-color: #F7F7F7;
+        @media screen and (max-width:1700px){
+            flex-direction: column;
+        }
+        @media screen and (max-width:1000px){
+            padding: 80px 20px;
+        }
+        @media screen and (max-width:630px){
+            padding: 80px 2px;
+        }
+        >.left{
+            @media screen and (max-width:1700px){
+                margin-bottom: 30px;
+            }
+            @media screen and (max-width:1700px){
+                padding: 0 30px;
+            }
+            h1{
+                color:#2C234D;
+                font-size: 48px;
+                font-weight: 900;
+                @media screen and (max-width:1700px){
+                    text-align: center;
+                }
+            }
+            h2{
+                color:#2C234D;
+                font-size: 24px;
+                font-weight: 300;
+                margin-top: 4px;
+                @media screen and (max-width:1700px){
+                    text-align: center;
+                }
+            }
+            a{
+                display: block;
+                width:200px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background-color: $mainColor;
+                color:#fff;
+                font-weight: 700;
+                font-size: 17px;
+                font-weight: 900;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-top: 30px;
+                transition: .3s;
+                @media screen and (max-width:1700px){
+                    margin:30px auto 0;
+                }
+                &:hover{
+                    background-color: #d44808;
+                }
+            }
+        }
+        >.center{
+            margin:0 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 500px);
+            grid-column-gap: 30px;
+            grid-row-gap: 2em;
+            justify-content: center;
+            @media screen and (max-width:1200px){
+                grid-template-columns: repeat(2, 400px);
+            }
+            @media screen and (max-width:1000px){
+                grid-template-columns: repeat(1, 100%);
+            }
+            >.item{
+                width:100%;
+                background-color: #fff;
+                border-left: $mainColor 4px solid;
+                padding: 20px 0 20px 18px;
+                box-shadow: 0 3px 5px #ddd;
+                @media screen and (max-width:1000px){
+                    padding: 20px 15px 20px 18px;
+                }
+                >h3{
+                    color:#2C234D;
+                    font-size: 22px;
+                    font-weight: 900;
+                }
+                p{
+                    margin-top: 10px;
+                    color:#333;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    >.about-teams{
+        padding: 80px 0;
+        .teams{
+            display: grid;
+            grid-template-columns: repeat(3, 360px);
+            grid-column-gap:3em;
+            grid-row-gap: 2em;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+           @media screen and (max-width:1500px){
+                grid-template-columns: repeat(3, 350px);
+           }
+           @media screen and (max-width:1150px){
+                grid-template-columns: repeat(3, 300px);
+                grid-column-gap:1.5em;
+            }
+            @media screen and (max-width:960px){
+                grid-template-columns: repeat(3, 260px);
+            }
+            @media screen and (max-width:840px){
+                grid-template-columns: repeat(3, 230px);
+            }
+            @media screen and (max-width:750px){
+                grid-template-columns: repeat(2, 300px);
+                grid-column-gap:1em;
+            }
+            @media screen and (max-width:630px){
+                grid-template-columns: repeat(2, 250px);
+            }
+            @media screen and (max-width:535px){
+                grid-template-columns: repeat(1, 90%);
+            }
+            >.team{
+                position: relative;
+                width:100%;
+                height: 450px;
+                overflow: hidden;
+                @media screen and (max-width:1150px){
+                    height: 400px;
+                }
+                @media screen and (max-width:960px){
+                    height: 360px;
+                }
+                @media screen and (max-width:840px){
+                    height: 310px;
+                }
+                @media screen and (max-width:750px){
+                    height: 380px;
+                }
+                @media screen and (max-width:630px){
+                    height: 330px;
+                }
+                @media screen and (max-width:535px){
+                    height: 400px;
+                }
+                &:hover > .info{
+                    bottom: 0;
+                }
+                
+                
+                >img{
+                    width:100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .info{
+                    position: absolute;
+                    bottom: -194px;
+                    left:0;
+                    width:100%;
+                    background-color: rgba(255, 95, 19,.8);
+                    color:#fff;
+                    padding: 10px 0;
+                    text-align: center;
+                    line-height: 1.5;
+                    font-weight: 600;
+                    font-size: 18px;
+                    transition: .3s;
+                    a{
+                        width:220px;
+                        height: 45px;
+                        color:#fff;
+                        background-color: #2C234D;
+                        text-align: center;
+                        line-height: 45px;
+                        border-radius: 6px;
+                        display: block;
+                        font-size: 17px;
+                        margin:10px auto;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+main.travel{
+    width:100%;
+    min-height: 100vh;
+    >.travel-banner{
+        width:100%;
+        height: 400px;
+        background-image: url('../images/bg2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        >h1{
+            margin-left: 100px;
+            color:$mainColor;
+            font-size: 40px;
+            text-shadow: 0.1em 0.1em 0.2em #333;
+        }
+        >p{
+            margin-left: 100px;
+            color:#fff;
+            font-weight: 900;
+            font-size: 20px;
+            text-shadow: 0.1em 0.1em 0.2em #333;
+        }
+    }
+    >.content{
+        padding: 80px 100px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-column-gap:3em;
+        grid-row-gap: 4em;
+        justify-content: center;
+        @media screen and (max-width:1200px){
+            grid-template-columns: repeat(3, 300px);
+        }
+        @media screen and (max-width:1200px){
+            grid-template-columns: repeat(2, 350px);
+        }
+        @media screen and (max-width:770px){
+            grid-template-columns: repeat(2, 300px);
+            grid-column-gap:1.5em;
+        }
+        @media screen and (max-width:630px){
+            grid-template-columns: repeat(2, 280px);
+            grid-column-gap:1em;
+        }
+        @media screen and (max-width:590px){
+            grid-template-columns: repeat(1, 100%);
+            grid-column-gap:0;
+            padding: 80px 30px;
+        }
+        @media screen and (max-width:450px){
+            padding: 80px 10px;
+        }
+        .item{
+            width:100%;
+            &:hover > .imgbox >img{
+                transform: scale(1.15);
+            }
+            >.imgbox{
+                width: 100%;
+                overflow: hidden;
+                >img{
+                    transition: .3s;
+                    width:100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
+            
+            >h3{
+                color:#2C234D;
+                font-weight: 700;
+                font-size: 22px;
+                margin-top: 7px;
+                border-bottom: 2px #2C234D solid;
+                display: inline;
+            }
+            p{
+                margin-top: 7px;
+                font-size: 17px;
+            }
+            a{
+                display: block;
+                width:100%;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background-color: $mainColor;
+                color:#fff;
+                font-weight: 700;
+                font-size: 17px;
+                font-weight: 900;
+                border-radius: 8px;
+                cursor: pointer;
+                margin-top: 30px;
+                transition: .3s;
+                @media screen and (max-width:1700px){
+                    margin:30px auto 0;
+                }
+                &:hover{
+                    background-color: #d44808;
+                }
+            }
+        }
     }
 }

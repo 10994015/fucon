@@ -11,28 +11,28 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    <div id="loading">
-        <div class="imgbox">
-        </div>
-        <img src="./images/logo3.png" width='100' alt="">
-    </div>
+    
     <div id="totop">
         <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
     <header id="header">
-        <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+        <a href="./" class="logo"><img src="./images/logo.png" alt=""></a>
         <nav id="nav">
             <a href="./">收費標準</a>
             <a href="./">輪椅接送</a>
             <a href="./">爬梯服務</a>
             <a href="./">長照2.0補助</a>
-            <a href="./">包車旅遊</a>
-            <a href="./" class="md-contact">立即預約</a>
-            <a href="./" class="contact">立即預約</a>
+            <a href="./web/travel.php">包車旅遊</a>
+            <a href="./web/reserve.php" class="md-contact">立即預約</a>
+            <a href="./web/reserve.php" class="contact">立即預約</a>
         </nav>
         <i class="fas fa-bars" id="menu-bar"></i>
     </header>
-    
+    <div id="loading">
+        <div class="imgbox">
+        </div>
+        <img src="./images/logo3.png" width='100' alt="">
+    </div>
     <section class="banner">
         <div class="text">
             <h1 >復康<span>愛</span>接送&nbsp;</h1>
