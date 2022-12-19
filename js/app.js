@@ -23,3 +23,6 @@ menuBar.addEventListener('click',()=>{
         menuBar.classList.remove('fa-times');
     }
 })
+setTimeout(()=>{
+    loading.style.display = "none"
+}, 1000)

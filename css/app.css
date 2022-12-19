@@ -617,4 +617,70 @@ footer > .copyright {
 footer > .copyright a {
   color: #FF5F13;
   font-weight: 700;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+  -webkit-animation: fade-out 1s linear infinite;
+          animation: fade-out 1s linear infinite;
+}
+@-webkit-keyframes fade-out {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#loading > .imgbox {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px #FF5F13 solid;
+  border-color: #FF5F13 #fff #fff #fff;
+  -webkit-animation: load 1s linear infinite;
+          animation: load 1s linear infinite;
+}
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=app.css.map */
