@@ -935,19 +935,35 @@ main.travel {
 main.travel > .travel-banner {
   width: 100%;
   height: 400px;
-  background-image: url("../images/bg2.png");
+  background-image: url("../images/bg5.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+main.travel > .travel-banner > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 main.travel > .travel-banner > h1 {
   margin-left: 100px;
   color: #FF5F13;
   font-size: 40px;
   text-shadow: 0.1em 0.1em 0.2em #333;
+  z-index: 9;
+  font-weight: 900;
+}
+@media screen and (max-width: 414px) {
+  main.travel > .travel-banner > h1 {
+    margin-left: 20px;
+  }
 }
 main.travel > .travel-banner > p {
   margin-left: 100px;
@@ -955,6 +971,12 @@ main.travel > .travel-banner > p {
   font-weight: 900;
   font-size: 20px;
   text-shadow: 0.1em 0.1em 0.2em #333;
+  z-index: 9;
+}
+@media screen and (max-width: 414px) {
+  main.travel > .travel-banner > p {
+    margin-left: 20px;
+  }
 }
 main.travel > .content {
   padding: 80px 100px;
@@ -1049,5 +1071,173 @@ main.travel > .content .item a {
   }
 }
 main.travel > .content .item a:hover {
+  background-color: #d44808;
+}
+
+main.toll {
+  width: 100%;
+  min-height: 100vh;
+}
+main.toll > .toll-banner {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/bg5.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+main.toll > .toll-banner > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main.toll > .toll-banner > h1 {
+  margin-left: 100px;
+  color: #FF5F13;
+  font-size: 40px;
+  text-shadow: 0.1em 0.1em 0.2em #333;
+  z-index: 9;
+  font-weight: 900;
+}
+@media screen and (max-width: 414px) {
+  main.toll > .toll-banner > h1 {
+    margin-left: 20px;
+  }
+}
+main.toll > .toll-banner > p {
+  margin-left: 100px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  text-shadow: 0.1em 0.1em 0.2em #333;
+  z-index: 9;
+}
+@media screen and (max-width: 414px) {
+  main.toll > .toll-banner > p {
+    margin-left: 20px;
+  }
+}
+main.toll > .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+@media screen and (max-width: 900px) {
+  main.toll > .intro {
+    flex-direction: column;
+  }
+}
+main.toll > .intro > .item {
+  width: 350px;
+  height: 250px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  margin: 0 50px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+@media screen and (max-width: 900px) {
+  main.toll > .intro > .item {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+main.toll > .intro > .item:hover {
+  box-shadow: 0px 5px 5px #ccc;
+}
+main.toll > .intro > .item h3 {
+  color: #FF5F13;
+  font-size: 26px;
+}
+main.toll > .intro > .item h4 {
+  margin-top: 5px;
+  color: #000;
+  font-size: 19px;
+}
+main.toll > .intro > .item p {
+  margin-top: 10px;
+  color: #444;
+  font-size: 16px;
+}
+main.toll > .content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+main.toll > .content h3 {
+  color: #FF5F13;
+  font-weight: 600;
+  font-size: 28px;
+}
+main.toll > .content h3.love {
+  color: #E84C3C;
+}
+main.toll > .content p {
+  color: #2C234D;
+  margin-top: 10px;
+  font-size: 19px;
+}
+main.toll .other {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  main.toll .other {
+    flex-direction: column;
+  }
+}
+main.toll .other > .precautions {
+  width: 500px;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  main.toll .other > .precautions {
+    width: 100%;
+    margin-top: 35px;
+  }
+}
+main.toll .other > .precautions h3 {
+  color: rgb(255, 77, 77);
+  font-weight: 900;
+  font-size: 28px;
+}
+main.toll .other > .precautions a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #FF5F13;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  font-weight: 900;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1700px) {
+  main.toll .other > .precautions a {
+    margin: 30px auto 0;
+  }
+}
+main.toll .other > .precautions a:hover {
   background-color: #d44808;
 }/*# sourceMappingURL=app.css.map */

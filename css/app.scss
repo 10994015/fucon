@@ -798,18 +798,32 @@ main.travel{
     >.travel-banner{
         width:100%;
         height: 400px;
-        background-image: url('../images/bg2.png');
+        background-image: url('../images/bg5.png');
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        >.overlay{
+            position: absolute;
+            top: 0;
+            left:0;
+            width:100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: .8);
+        }
         >h1{
             margin-left: 100px;
             color:$mainColor;
             font-size: 40px;
             text-shadow: 0.1em 0.1em 0.2em #333;
+            z-index: 9;
+            font-weight: 900;
+            @media screen and (max-width:414px){
+                margin-left: 20px;
+            }
         }
         >p{
             margin-left: 100px;
@@ -817,6 +831,10 @@ main.travel{
             font-weight: 900;
             font-size: 20px;
             text-shadow: 0.1em 0.1em 0.2em #333;
+            z-index: 9;
+            @media screen and (max-width:414px){
+                margin-left: 20px;
+            }
         }
     }
     >.content{
@@ -889,6 +907,159 @@ main.travel{
                 font-weight: 900;
                 border-radius: 8px;
                 cursor: pointer;
+                margin-top: 30px;
+                transition: .3s;
+                @media screen and (max-width:1700px){
+                    margin:30px auto 0;
+                }
+                &:hover{
+                    background-color: #d44808;
+                }
+            }
+        }
+    }
+}
+main.toll{
+    width:100%;
+    min-height: 100vh;
+    >.toll-banner{
+        width:100%;
+        height: 400px;
+        background-image: url('../images/bg5.png');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        >.overlay{
+            position: absolute;
+            top: 0;
+            left:0;
+            width:100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: .8);
+        }
+        >h1{
+            margin-left: 100px;
+            color:$mainColor;
+            font-size: 40px;
+            text-shadow: 0.1em 0.1em 0.2em #333;
+            z-index: 9;
+            font-weight: 900;
+            @media screen and (max-width:414px){
+                margin-left: 20px;
+            }
+        }
+        >p{
+            margin-left: 100px;
+            color:#fff;
+            font-weight: 900;
+            font-size: 20px;
+            text-shadow: 0.1em 0.1em 0.2em #333;
+            z-index: 9;
+            @media screen and (max-width:414px){
+                margin-left: 20px;
+            }
+        }
+    }
+    >.intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 20px;
+        @media screen and (max-width:900px){
+            flex-direction: column;
+        }
+        >.item{
+            width:350px;
+            height: 250px;
+            padding: 30px;
+            background-color: #f9f9f9;
+            margin:0 50px;
+            transition: .3s;
+            cursor: pointer;
+            border-radius: 10px;
+            @media screen and (max-width:900px){
+                width:100%;
+                margin-top: 18px;
+            }
+            &:hover{
+                box-shadow: 0px 5px 5px #ccc;
+            }
+            h3{
+                color:$mainColor;
+                font-size: 26px;
+            }
+            h4{
+                margin-top: 5px;
+                color:#000;
+                font-size: 19px;
+            }
+            p{
+                margin-top: 10px;
+                color:#444;
+                font-size: 16px;
+            }
+        }
+    }
+    >.content{
+        width:100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        h3{
+            color:$mainColor;
+            font-weight: 600;
+            font-size: 28px;
+            &.love{
+                color:#E84C3C;
+            }
+        }
+        p{
+            color:#2C234D;
+            margin-top: 10px;
+            font-size: 19px;
+        }
+    }
+    .other{
+        width:100%;
+        max-width: 1000px;
+        padding: 40px 20px;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width:500px){
+            flex-direction: column;
+        }
+        >.precautions{
+            width:500px;
+            text-align: center;
+            @media screen and (max-width:500px){
+                width:100%;
+                margin-top: 35px;
+            }
+            h3{
+                color:rgb(255, 77, 77);
+                font-weight: 900;
+                font-size: 28px;
+            }
+            a{
+                display: block;
+                width:200px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                background-color: $mainColor;
+                color:#fff;
+                font-weight: 700;
+                font-size: 17px;
+                font-weight: 900;
+                border-radius: 8px;
+                cursor: pointer;
+                margin:0 auto;
                 margin-top: 30px;
                 transition: .3s;
                 @media screen and (max-width:1700px){

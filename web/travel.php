@@ -17,6 +17,7 @@
 
     <main class="travel">
         <div class="travel-banner">
+            <div class="overlay"></div>
             <h1>無障礙包車旅遊</h1>
             <p>無障礙旅遊專線規劃，熊安穩帶您享受陽光、擁抱大自然，讓身心靈都健康。</p>
         </div>
