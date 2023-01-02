@@ -116,6 +116,9 @@ header{
             }
             &.md-contact{
                 display: none;
+                @media screen and (max-width:860px){
+                    display: block;
+                }
             }
             &.contact{
                 width:150px;
@@ -221,11 +224,12 @@ header{
     background-color: #F9F9F9;
     @media screen and (max-width:800px){
         flex-direction: column;
-        height: auto;
+        height: 207px *3 ;
         padding: 30px 0;
     }
     >.item{
         width:300px;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -417,8 +421,16 @@ header{
     @media screen and (max-width:930px){
         flex-direction: column;
     }
+    @media screen and (max-width:535px){
+        padding: 200px 10px;
+    }
     >.text{
         margin-right:70px ;
+        width:100%;
+        max-width: 530px;
+        @media screen and (max-width:930px){
+            margin-right:0px ;
+        }
         h3{
             color:$mainColor;
             font-size: 18px;
@@ -440,6 +452,7 @@ header{
                 color:#ddd;
                 padding: 15px 0;
                 cursor: grab;
+                width:100%;
                 >p{
                     margin-bottom: 50px;
                     color:#fff;
@@ -481,6 +494,9 @@ header{
         @media screen and (max-width:930px){
             margin-left: 0;
             margin-top: 40px;
+        }
+        @media screen and (max-width:300px){
+            width:100%;
         }
         &:hover{
             background-color: #d44808;
@@ -821,7 +837,7 @@ main.travel{
             text-shadow: 0.1em 0.1em 0.2em #333;
             z-index: 9;
             font-weight: 900;
-            @media screen and (max-width:414px){
+            @media screen and (max-width:770px){
                 margin-left: 20px;
             }
         }
@@ -832,7 +848,7 @@ main.travel{
             font-size: 20px;
             text-shadow: 0.1em 0.1em 0.2em #333;
             z-index: 9;
-            @media screen and (max-width:414px){
+            @media screen and (max-width:770px){
                 margin-left: 20px;
             }
         }

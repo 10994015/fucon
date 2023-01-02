@@ -1,5 +1,6 @@
 const header = document.getElementById('header');
 const menuBar = document.getElementById('menu-bar');
+const loading  =document.getElementById('loading');
 let isMenuOpen = false;
 window.addEventListener('scroll', ()=>{
     if(this.scrollY > 100){

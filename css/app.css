@@ -134,6 +134,11 @@ header nav a:hover {
 header nav a.md-contact {
   display: none;
 }
+@media screen and (max-width: 860px) {
+  header nav a.md-contact {
+    display: block;
+  }
+}
 header nav a.contact {
   width: 150px;
   height: 55px;
@@ -259,12 +264,13 @@ header > .logo img {
 @media screen and (max-width: 800px) {
   .infomation {
     flex-direction: column;
-    height: auto;
+    height: 621px;
     padding: 30px 0;
   }
 }
 .infomation > .item {
   width: 300px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,8 +485,20 @@ header > .logo img {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 535px) {
+  .comment {
+    padding: 200px 10px;
+  }
+}
 .comment > .text {
   margin-right: 70px;
+  width: 100%;
+  max-width: 530px;
+}
+@media screen and (max-width: 930px) {
+  .comment > .text {
+    margin-right: 0px;
+  }
 }
 .comment > .text h3 {
   color: #FF5F13;
@@ -507,6 +525,7 @@ header > .logo img {
   padding: 15px 0;
   cursor: -webkit-grab;
   cursor: grab;
+  width: 100%;
 }
 .comment > .text > .commentlist .item > p {
   margin-bottom: 50px;
@@ -547,6 +566,11 @@ header > .logo img {
   .comment > a {
     margin-left: 0;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .comment > a {
+    width: 100%;
   }
 }
 .comment > a:hover {
@@ -960,7 +984,7 @@ main.travel > .travel-banner > h1 {
   z-index: 9;
   font-weight: 900;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 770px) {
   main.travel > .travel-banner > h1 {
     margin-left: 20px;
   }
@@ -973,7 +997,7 @@ main.travel > .travel-banner > p {
   text-shadow: 0.1em 0.1em 0.2em #333;
   z-index: 9;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 770px) {
   main.travel > .travel-banner > p {
     margin-left: 20px;
   }
