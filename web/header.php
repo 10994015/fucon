@@ -13,7 +13,6 @@
         <a href="./toll.php">收費標準</a>
         <a href="./">輪椅接送</a>
         <a href="./">爬梯服務</a>
-        <a href="./">長照2.0補助</a>
         <a href="./travel.php">包車旅遊</a>
         <a href="./reserve.php" class="md-contact">立即預約</a>
         <a href="./reserve.php" class="contact">立即預約</a>
